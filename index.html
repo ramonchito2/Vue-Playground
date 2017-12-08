@@ -1,0 +1,34 @@
+<body>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+	<link rel="stylesheet" href="./app.css">
+	<div id="root" class="container">
+		<!-- <todo-list></todo-list> -->
+		<!-- <alert-message title="This is the title" message="Hey there, I'm the alert message"></alert-message> -->
+		<modal title="Stop and read this message right now!!" v-show="showModal" @closed="showModal = false">
+			<p>
+				One day, I'm going to be famous, and you will be jealous. There is nothing that you can do to stop me. Oh yeah, I'm the most humble person that you know. That is all. Continue what you were doing little one.
+			</p>
+		</modal>
+		<a href="#" class="button is-large" @click.prevent="showModal = true">Show Modal</a>
+		<tabs>
+			<tab title="Superman">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam animi quo numquam fugit magni esse aspernatur iure. Rerum, totam ullam, nemo voluptatibus dicta laudantium quia esse quas dolores beatae iure.
+			</tab>
+			<tab title="Batman">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam animi quo numquam fugit magni esse aspernatur iure. Rerum, totam ullam, nemo voluptatibus dicta laudantium quia esse quas dolores beatae iure.
+			</tab>
+			<tab title="Flash">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam animi quo numquam fugit magni esse aspernatur iure. Rerum, totam ullam, nemo voluptatibus dicta laudantium quia esse quas dolores beatae iure.
+			</tab>
+			<tab title="Wonder Woman">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam animi quo numquam fugit magni esse aspernatur iure. Rerum, totam ullam, nemo voluptatibus dicta laudantium quia esse quas dolores beatae iure.
+			</tab>
+			<tab title="Cyborg">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam animi quo numquam fugit magni esse aspernatur iure. Rerum, totam ullam, nemo voluptatibus dicta laudantium quia esse quas dolores beatae iure.
+			</tab>
+		</tabs>
+	</div>
+
+	<script src="https://unpkg.com/vue@2.5.9/dist/vue.js"></script>
+	<script src="./app.js"></script>
+</body>
